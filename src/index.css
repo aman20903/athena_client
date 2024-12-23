@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Application Container */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+/* Skill Tag Styles */
+.skill-tag {
+  display: inline-block;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border-radius: 20px;
+  padding: 8px 12px;
+  margin: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-tag:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #45a049; /* Slightly darker green */
+}
+
+.skill-tag:nth-child(odd) {
+  background-color: #007BFF; /* Alternate blue for variety */
+}
+
+.skill-tag:nth-child(odd):hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Skill Tag Container */
+.skill-tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Align tags to the center */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: 80%;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .skill-tag {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
